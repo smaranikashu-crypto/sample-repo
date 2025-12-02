@@ -6,7 +6,7 @@ from database.connection import init_database
 
 def run_server():
     init_database()
-    server = HTTPServer(("", 8001), StudentRouter)
+    server = HTTPServer(("", 8000), StudentRouter)
     print("🚀 Server running at http://localhost:8000")
     server.serve_forever()
 
