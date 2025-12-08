@@ -33,16 +33,16 @@ export function apiCreate(data) {
   });
 }
 
-// // Update a student
-// export function apiUpdate(id, data) {
-//   return fetch(`${API_URL}/${id}`, {
-//     method: "PUT",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify(data)
-//   });
-// }
+// Update a student
+export function apiUpdate(id, data) {
+  return fetch(`${API_URL}/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  });
+}
 
-// // Delete a student
-// export function apiDelete(id) {
-//   return fetch(`${API_URL}/${id}`, { method: "DELETE" });
-// }
+// Delete a student
+export function apiDelete(id) {
+  return fetch(`${API_URL}/${id}`, { method: "DELETE" });
+}
