@@ -10,7 +10,7 @@ import { showAlert } from "../components/Alert.js";
 import { renderStudentTable } from "../components/StudentTable.js";
 import { resetForm, fillForm } from "../components/StudentForm.js";
 
-import { setState, getState } from "../state/store.js";
+import {setState, getState } from "../state/store.js";
 import { $, createElement } from "../utils/dom.js";
 
 // Setup event listeners and load initial data

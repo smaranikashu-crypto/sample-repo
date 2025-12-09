@@ -6,7 +6,7 @@
 curl -X GET "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev/api/students"
 
 # B. Get One Student
-curl -X GET "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev//api/students/1"
+curl -X GET curl -X GET "http://localhost:8000/api/students/1"
 
 # C. Create Student
 curl -X POST "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev/api/students" \
@@ -19,7 +19,7 @@ curl -X POST "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.githu
   }'
 
 # D. Update Student
-curl -X PUT "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev//api/students/1" \
+curl -X PUT "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev/api/students/1" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Updated",
@@ -29,7 +29,7 @@ curl -X PUT "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github
   }'
 
 # E. Delete Student
-curl -X DELETE "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev//api/students/1"
+curl -X DELETE "https://automatic-space-xylophone-97r6jrxjq4qx2775v-8000.app.github.dev/api/students/1"
 
 
 ##################### DB Observation Via SQLite Web
